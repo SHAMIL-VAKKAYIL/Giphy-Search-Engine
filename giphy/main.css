@@ -1,0 +1,107 @@
+body {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.container-padding50 {
+	padding-top: 70px;
+}
+
+.head{
+	color: #e88420;
+	font-family:monospace;
+	font-size: 40px;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.container-textinput {
+	width: 75%;
+	display:inline-flex;
+	padding: 18px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	background-color: rgba(251, 248, 243, 0.875);
+	border-radius: 5px;
+	border-color: rgba(12, 8, 1, 0.385);
+	
+}
+
+.container-button {
+	width: 11%;
+	display: inline;
+	height: 58px;
+	margin-left: 5px;
+	background-color: #e88420;
+	color: rgb(255, 255, 255);
+	align-items: center;
+	font-size: 15px;
+	font-family: monospace;
+	border: 1px solid #e38528;
+	border-radius: 5px;
+	cursor:pointer;
+	
+
+}
+.container-button:hover{
+	border: #111;
+	background-color: #111;
+
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 60%;
+    }
+    
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        width:100%;
+    }
+
+    .experience .box-container .box{
+        padding-right: 0;
+    }
+}
